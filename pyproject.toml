@@ -1,0 +1,25 @@
+[project]
+name = "gap-jupyter"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "Haopin Wu", email = "psistwu@outlook.com"},
+]
+dependencies = [
+    "gap-jupyter @ file:///home/psist/gap-4.12.2/pkg/jupyterkernel",
+    "pip>=24.0",
+    "jupyterlab>=4.1.2",
+]
+requires-python = "==3.11.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = false
+
+[tool.pdm.scripts]
+#notebook = "jupyter notebook --no-browser --ServerApp.ip=0.0.0.0"
+start = "jupyter lab"
+_.env = {JUPYTER_GAP_EXECUTABLE = "gap", JUPYTER_CONFIG_DIR = "./.jupyter"}
+
