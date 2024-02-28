@@ -1,3 +1,0 @@
-[submodule "module/JupyterKernel"]
-	path = module/JupyterKernel
-	url = git@github.com:gap-packages/JupyterKernel.git
