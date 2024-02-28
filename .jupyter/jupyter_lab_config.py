@@ -1038,7 +1038,7 @@ c.ServerApp.ip = '0.0.0.0'
 ## The directory to use for notebooks and kernels.
 #  Default: ''
 # c.ServerApp.root_dir = ''
-c.ServerApp.root_dir = '/home/psist/public/workspace'
+c.ServerApp.root_dir = './workspace'
 
 ## The session manager class to use.
 #  Default: 'builtins.object'
